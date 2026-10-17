@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dB Halo – Foreground service demo</title>
+<meta name="description" content="Screen recording showing how dB Halo for Android uses its microphone foreground service (FOREGROUND_SERVICE_MICROPHONE) for the Sleep Journal.">
+<meta name="robots" content="noindex">
+<style>
+:root{--ink:#26242f;--muted:#66627a;--accent:#d63f97;--bg:#fbfbfe}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,"Noto Sans",sans-serif;-webkit-font-smoothing:antialiased}
+main.fgs{max-width:760px;margin:0 auto;padding:24px 16px 48px;line-height:1.6}
+main.fgs h1{font-size:1.6rem;line-height:1.25}
+main.fgs h2{font-size:1.15rem;margin-top:1.8em}
+main.fgs video{display:block;width:100%;max-width:360px;margin:16px auto;border-radius:16px;background:#000}
+main.fgs ol li{margin:.25em 0}
+main.fgs a{color:var(--accent)}
+main.fgs code{font-size:.92em}
+main.fgs .note{color:var(--muted);font-size:.95em}
+</style>
+</head>
+<body>
+<main class="fgs">
+<h1>dB Halo – Foreground service demo</h1>
+<p>This video is a real screen recording of dB Halo for Android (release build 1.0.2, Android 15 emulator). It shows why the app uses a foreground service of type <code>microphone</code> (<code>FOREGROUND_SERVICE_MICROPHONE</code>).</p>
+<video controls playsinline preload="metadata" src="fgs-demo.mp4"></video>
+<p><a href="fgs-demo.mp4">Download / open the video file (MP4, H.264)</a></p>
+<h2>What the foreground service does</h2>
+<p>dB Halo's Sleep Journal measures how loud the bedroom is during the night. When the user taps Start on the Sleep tab, <code>SleepJournalService</code> starts as a foreground service of type <code>microphone</code>. It reads the microphone continuously, turns each audio buffer into a sound level in decibels, sorts the levels into loudness zones (quiet to very loud) and logs loud moments as events. Only these numbers are kept on the device – the raw audio is never saved or uploaded. While it runs, an ongoing notification shows that the Sleep Journal is active, the current sound level and a Stop button. When the user taps Stop (in the app or in the notification), the service stops, the night's summary is saved and the notification is removed.</p>
+<p>A sleep recording is started right before the user falls asleep and has to keep measuring with the screen off for the whole night. If the system paused or stopped the service, the microphone would stop and the journal would have gaps exactly while the user is asleep, which is the purpose of the feature.</p>
+<p class="note">The Android emulator has no real microphone input, so the measured level stays low (about 18–20 dB) in this recording; on a phone it follows the sound in the room.</p>
+<h2>Steps shown in the video</h2>
+<ol>
+<li>Open dB Halo and go to the Sleep tab.</li>
+<li>Tap Start – the Sleep Journal starts and the microphone foreground service starts (the green microphone indicator appears).</li>
+<li>The notification shade shows the ongoing "Sleep Journal · Active" notification with the current sound level and a Stop button.</li>
+<li>Go to the home screen – the notification is still there and the sound level keeps updating.</li>
+<li>Back in dB Halo, tap Stop – the measurement ends and its summary is saved on the device.</li>
+<li>The dB Halo notification is gone – the foreground service has stopped.</li>
+</ol>
+<p><a href="./">dB Halo support</a> · <a href="privacy.html">Privacy Policy</a></p>
+</main>
+</body>
+</html>
