@@ -1,0 +1,17 @@
+# dB Halo: Sound Meter support
+
+> Official support, help and privacy pages for dB Halo: Sound Meter, an iOS app by Lumi Studio.
+
+- App Store: https://apps.apple.com/app/id6806826699
+- Platform: iOS
+- App Store category: Utilities
+- Developer: Lumi Studio
+
+## Pages
+
+- [Home](https://open.cait518.cc/dbhalo-support/)
+- [Help, FAQ and troubleshooting](https://open.cait518.cc/dbhalo-support/help.html)
+- [Support and contact](https://open.cait518.cc/dbhalo-support/support.html)
+- [Privacy policy](https://open.cait518.cc/dbhalo-support/privacy.html)
+
+<!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->
