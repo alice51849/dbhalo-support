@@ -1,0 +1,26 @@
+{
+  "name": "dB Halo: Sound Meter",
+  "short_name": "dB Halo: Sound Meter",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/86/3c/27863ce2-73b8-18b1-bf02-d51c76469d1a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.alice51849.dBHalo",
+      "url": "https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&referrer=utm_source%3Dsupport_site%26utm_medium%3Dpwa_banner%26utm_campaign%3Ddbhalo"
+    }
+  ],
+  "prefer_related_applications": true,
+  "x_generator": "ls-pwa/1"
+}
