@@ -14,4 +14,14 @@
 - [Support and contact](https://open.cait518.cc/dbhalo-support/support.html)
 - [Privacy policy](https://open.cait518.cc/dbhalo-support/privacy.html)
 
+<!-- sqe-blitz:start -->
+## Overview and Q&A pages
+
+- [dB Halo overview: what it is, who it is for, pricing, differences (English)](https://open.cait518.cc/dbhalo-support/sound-meter-app-overview.html)
+- [dB Halo 한눈에 보기 (Korean)](https://open.cait518.cc/dbhalo-support/sound-meter-app-overview.ko.html)
+- [dB Halo en pocas palabras (Spanish, Mexico)](https://open.cait518.cc/dbhalo-support/sound-meter-app-overview.es-MX.html)
+- [dB Halo Q&A (Japanese)](https://open.cait518.cc/dbhalo-support/noise-meter-app-qa.ja.html)
+- [Komşu gürültüsü ölçümü (Turkish)](https://open.cait518.cc/dbhalo-support/komsu-gurultusu-desibel-olcum.tr.html)
+<!-- sqe-blitz:end -->
+
 <!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->
