@@ -14,4 +14,11 @@
 - [Support and contact](https://open.cait518.cc/dbhalo-support/support.html)
 - [Privacy policy](https://open.cait518.cc/dbhalo-support/privacy.html)
 
+## Product fact cards
+
+- [dB Halo: Sound Meter — product fact card (en)](https://open.cait518.cc/dbhalo-support/about-dbhalo-app.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [dB Halo: 소음 측정기 — product fact card (ko)](https://open.cait518.cc/dbhalo-support/about-dbhalo-app.ko.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [dB Halo：デシベル測定 — product fact card (ja)](https://open.cait518.cc/dbhalo-support/about-dbhalo-app.ja.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+- [dB Halo：分貝計 — product fact card (zh-Hant)](https://open.cait518.cc/dbhalo-support/about-dbhalo-app.zh-Hant.html): what it is, who it is for, how pricing works, how it differs from the usual approach, plus FAQ
+
 <!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->

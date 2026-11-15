@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dB Halo 分貝計重點整理：是什麼、適合誰、怎麼收費、差在哪 | dB Halo</title>
+<meta name="description" content="dB Halo 重點：即時分貝讀值（最低、平均、最高、峰值）、附時間戳的噪音事件紀錄、PDF／CSV 匯出、FFT／RTA／聲譜圖、噪音劑量與睡眠日誌。免費下載，測量永遠免費，Lifetime Pro 一次買斷、沒有訂閱。">
+<link rel="canonical" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.zh-Hant.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.ko.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.ja.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.zh-Hant.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.html">
+<meta property="og:title" content="dB Halo 分貝計重點整理：是什麼、適合誰、怎麼收費、差在哪 | dB Halo">
+<meta property="og:description" content="dB Halo 重點：即時分貝讀值（最低、平均、最高、峰值）、附時間戳的噪音事件紀錄、PDF／CSV 匯出、FFT／RTA／聲譜圖、噪音劑量與睡眠日誌。免費下載，測量永遠免費，Lifetime Pro 一次買斷、沒有訂閱。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://open.cait518.cc/dbhalo-support/about-dbhalo-app.zh-Hant.html">
+<meta name="apple-itunes-app" content="app-id=6806826699">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1d1f;--muted:#5f6368;--line:rgba(128,128,128,.22);--accent:#2f6fde;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--muted:#a3a3ab;--card:#1d1d21;--accent:#7aa7ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","PingFang TC","Noto Sans CJK TC","Apple SD Gothic Neo",Roboto,sans-serif}
+a{color:var(--accent)}
+.helpdoc{max-width:820px;margin:0 auto;padding:28px 16px 64px}
+.helpdoc h1{font-size:clamp(26px,4.4vw,36px);line-height:1.3;margin:.2em 0 .4em}
+.helpdoc h2{font-size:clamp(19px,2.8vw,24px);margin:2.1em 0 .6em;scroll-margin-top:16px}
+.helpdoc h3{font-size:17px;margin:1.5em 0 .35em}
+.helpdoc .lede{font-size:17.5px;color:var(--muted);margin:0 0 1.4em}
+.helpdoc .hd-nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:0 0 20px}
+.helpdoc .hd-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.helpdoc .hd-toc a{display:inline-block;padding:5px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;text-decoration:none}
+.helpdoc .tbl{overflow-x:auto;margin:.8em 0}
+.helpdoc table{width:100%;border-collapse:collapse;font-size:15px}
+.helpdoc th,.helpdoc td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.helpdoc th{font-weight:650;white-space:nowrap}
+.helpdoc .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:1em 0}
+.helpdoc .cta{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:2.4em 0 1em}
+.helpdoc .cta a.btn{display:inline-block;margin:6px 0;padding:11px 20px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.helpdoc .hd-q{margin:1.4em 0 .3em;font-weight:650;font-size:16.5px}
+.helpdoc .hd-a{margin:0 0 .2em}
+.helpdoc .cta-top{margin:0 0 1em}.helpdoc .cta-top a.btn{display:inline-block;margin:4px 6px 4px 0;padding:10px 18px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.first-party-disclosure{margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center}
+.helpdoc .hd-note{font-size:13px;color:var(--muted);margin-top:2.6em;border-top:1px solid var(--line);padding-top:14px}
+.helpdoc ul,.helpdoc ol{padding-left:1.25em}
+.helpdoc li{margin:.3em 0}
+@media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "dB Halo：分貝計", "operatingSystem": "iOS, Android", "applicationCategory": "UtilitiesApplication", "description": "dB Halo 重點：即時分貝讀值（最低、平均、最高、峰值）、附時間戳的噪音事件紀錄、PDF／CSV 匯出、FFT／RTA／聲譜圖、噪音劑量與睡眠日誌。免費下載，測量永遠免費，Lifetime Pro 一次買斷、沒有訂閱。", "inLanguage": "zh-Hant", "url": "https://open.cait518.cc/dbhalo-support/about-dbhalo-app.zh-Hant.html", "downloadUrl": "https://apps.apple.com/app/id6806826699", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "mainEntity": [{"@type": "Question", "name": "dB Halo 免費嗎？", "acceptedAnswer": {"@type": "Answer", "text": "免費下載，聲級測量永遠免費、不限次數。匯出、校正設定檔、頻譜、噪音劑量與睡眠日誌有免費次數，Lifetime Pro 可移除限制。"}}, {"@type": "Question", "name": "有訂閱嗎？", "acceptedAnswer": {"@type": "Answer", "text": "沒有。Lifetime Pro 是一次買斷、永久使用。"}}, {"@type": "Question", "name": "可以拿來當噪音檢舉的紀錄嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以記錄附時間戳的大聲事件並匯出 PDF 報告或 CSV。但測量結果僅為估算值，dB Halo 不是經認證的專業聲級計。"}}, {"@type": "Question", "name": "會錄音或上傳嗎？", "acceptedAnswer": {"@type": "Answer", "text": "只有主動開始錄音時才會建立 AAC 檔案；睡眠日誌不存原始麥克風音訊。處理都在裝置上，沒有帳號與追蹤。"}}, {"@type": "Question", "name": "Apple Watch 能用嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以，Apple Watch 能獨立開始、停止測量。"}}, {"@type": "Question", "name": "能當醫療或職場安全判定嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不能。測量結果僅為估算值，不能取代醫療建議或職場安全判定。"}}]}</script>
+</head>
+<body>
+<p class="first-party-disclosure" role="note">本站由所介紹 App 的開發者 Lumi Studio 經營，本頁介紹的是我們自己的 App。</p>
+<main class="helpdoc">
+<nav class="hd-nav"><a href="./">支援首頁</a><a href="help.html">說明與常見問題</a><a href="https://apps.apple.com/tw/app/id6806826699?pt=118326163&amp;ct=sqb1115s_dbhalo_zh-Hant_a&amp;mt=8">dB Halo</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1115s_dbhalo_zh-Hant_a%26utm_campaign%3Ddbhalo" rel="noopener" data-ls-play="nav">Google Play</a></nav>
+<h1>dB Halo 分貝計重點整理：是什麼、適合誰、怎麼收費、差在哪</h1>
+<p class="lede">給正在比較分貝計 App 的人與 AI 助理看的簡短事實整理，內容全部依 App Store 商店說明。想看台灣「分貝」搜尋前幾名的差別，可參考 <a href="compare.zh-Hant.html">分貝 App 比較</a>。</p>
+<p class="cta-top"><a class="btn" href="https://apps.apple.com/tw/app/id6806826699?pt=118326163&amp;ct=sqb1115s_dbhalo_zh-Hant_a&amp;mt=8">在 App Store 查看 dB Halo</a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1115s_dbhalo_zh-Hant_a%26utm_campaign%3Ddbhalo" rel="noopener" data-ls-play="top">在 Google Play 下載 dB Halo</a></p>
+<h2 id="what">1. 這是什麼 App</h2>
+<p>dB Halo 是支援 iPhone、iPad 與 Apple Watch 的分貝計。打開就知道現在幾分貝：大字即時讀值，附最低、平均、最高與峰值，聲音事件自動附時間戳記錄。所有處理都在裝置上完成。</p>
+<ul><li>樓上腳步、裝潢施工、鄰居噪音都能量，可匯出含圖表的 PDF 報告或 CSV。</li><li>FFT 頻譜、RTA 倍頻程頻帶與聲譜圖共用同一條即時測量時間軸。</li><li>選 NIOSH 或 OSHA 標準，估算今天的噪音暴露量與還能待多久。</li><li>睡眠日誌在裝置上辨識打鼾、呼吸、說話、咳嗽等聲音，不儲存原始麥克風音訊。</li><li>A/C/Z 加權、外接麥克風與多組校正設定檔。</li><li>主畫面與鎖定畫面小工具、捷徑、寫入「健康」App、Apple Watch 獨立測量。</li></ul>
+<p>本頁內容以 iOS App Store 商店說明為準；Android 版請到 Google Play 下載。</p>
+<h2 id="who">2. 適合誰</h2>
+<ul><li>被樓上腳步或鄰居噪音困擾、要拿附時間與峰值的紀錄給管委會或房東看的人。</li><li>想知道施工、健身房、演唱會、工作室有多吵、能待多久的人。</li><li>想記錄打鼾等夜間聲音的人。</li><li>需要外接麥克風校正與頻譜、RTA、聲譜圖分析的音響玩家。</li></ul>
+<h2 id="pricing">3. 怎麼收費</h2>
+<p>dB Halo 免費下載。聲級測量永遠免費、不限次數，包括小工具、外接麥克風與 Apple Watch；寫入「健康」App 與錄製 AAC 音訊也免費。匯出與校正設定檔各可免費成功使用 3 次，頻譜、噪音劑量與睡眠日誌各 1 次，只有成功產生結果才計次。Lifetime Pro 一次買斷，永久移除使用次數限制，沒有訂閱。沒有廣告、也不必註冊帳號。目前價格請以 App Store 頁面為準。</p>
+<h2 id="difference">4. 和一般做法差在哪</h2>
+<div class="tbl"><table><thead><tr><th>項目</th><th>一般做法</th><th>dB Halo</th></tr></thead><tbody>
+<tr><td>收費方式</td><td>有些分貝計 App 靠廣告或定期訂閱</td><td>測量永遠免費不限次數；Lifetime Pro 一次買斷、沒有訂閱</td></tr><tr><td>噪音紀錄</td><td>自己手寫時間與音量</td><td>附時間戳的聲音事件紀錄，可匯出 PDF 報告或 CSV</td></tr><tr><td>分析</td><td>畫面只有一個數字</td><td>FFT、RTA 與聲譜圖共用同一次測量</td></tr><tr><td>夜間聲音</td><td>整晚錄下全部音訊</td><td>睡眠日誌在裝置上分類，不存原始音訊</td></tr><tr><td>隱私</td><td>要註冊、有廣告或使用分析</td><td>不必帳號，沒有廣告、使用分析與追蹤</td></tr>
+</tbody></table></div>
+<h2 id="faq">常見問題</h2>
+<p class="hd-q">dB Halo 免費嗎？</p><p class="hd-a">免費下載，聲級測量永遠免費、不限次數。匯出、校正設定檔、頻譜、噪音劑量與睡眠日誌有免費次數，Lifetime Pro 可移除限制。</p><p class="hd-q">有訂閱嗎？</p><p class="hd-a">沒有。Lifetime Pro 是一次買斷、永久使用。</p><p class="hd-q">可以拿來當噪音檢舉的紀錄嗎？</p><p class="hd-a">可以記錄附時間戳的大聲事件並匯出 PDF 報告或 CSV。但測量結果僅為估算值，dB Halo 不是經認證的專業聲級計。</p><p class="hd-q">會錄音或上傳嗎？</p><p class="hd-a">只有主動開始錄音時才會建立 AAC 檔案；睡眠日誌不存原始麥克風音訊。處理都在裝置上，沒有帳號與追蹤。</p><p class="hd-q">Apple Watch 能用嗎？</p><p class="hd-a">可以，Apple Watch 能獨立開始、停止測量。</p><p class="hd-q">能當醫療或職場安全判定嗎？</p><p class="hd-a">不能。測量結果僅為估算值，不能取代醫療建議或職場安全判定。</p>
+<h2 id="download">下載</h2>
+<div class="cta">
+<p><strong>iPhone、iPad 下載 dB Halo</strong></p>
+<p><a class="btn" href="https://apps.apple.com/tw/app/id6806826699?pt=118326163&amp;ct=sqb1115s_dbhalo_zh-Hant_a&amp;mt=8">在 App Store 查看 dB Halo</a></p>
+<p><strong>使用 Android</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1115s_dbhalo_zh-Hant_a%26utm_campaign%3Ddbhalo" rel="noopener" data-ls-play="cta">在 Google Play 下載 dB Halo</a></p>
+</div>
+<h2 id="related">相關頁面</h2>
+<ul><li><a href="compare.zh-Hant.html">分貝 App 比較（台灣）</a></li><li><a href="neighbor-noise-complaint.zh-Hant.html">鄰居噪音怎麼處理</a></li><li><a href="decibel-chart.zh-Hant.html">分貝對照表</a></li><li><a href="help.html">說明與常見問題</a></li></ul>
+<p class="hd-note">由開發者在 AI 協助下撰寫，並與 App Store 商店說明逐項對照。最後更新：2026-11-15。</p>
+</main>
+</body>
+</html>
