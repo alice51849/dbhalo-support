@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geräuschpegel messen mit dem iPhone: richtig vorgehen, Werte verstehen</title>
+<meta name="description" content="Geräuschpegel messen mit dB Halo: Minimum, Mittelwert, Maximum und Spitze verstehen, A-, C- oder Z-Bewertung wählen, Lärmdosis schätzen und Geräusche in der Nacht protokollieren.">
+<link rel="canonical" href="https://open.cait518.cc/dbhalo-support/geraeuschpegel-messen.de-DE.html">
+<meta property="og:title" content="Geräuschpegel messen mit dem iPhone: richtig vorgehen, Werte verstehen">
+<meta property="og:description" content="Geräuschpegel messen mit dB Halo: Minimum, Mittelwert, Maximum und Spitze verstehen, A-, C- oder Z-Bewertung wählen, Lärmdosis schätzen und Geräusche in der Nacht protokollieren.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://open.cait518.cc/dbhalo-support/geraeuschpegel-messen.de-DE.html">
+<meta name="apple-itunes-app" content="app-id=6806826699">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1d1f;--muted:#5f6368;--line:rgba(128,128,128,.22);--accent:#2f6fde;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--muted:#a3a3ab;--card:#1d1d21;--accent:#7aa7ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","PingFang TC","Noto Sans CJK TC","Apple SD Gothic Neo",Roboto,sans-serif}
+a{color:var(--accent)}
+.helpdoc{max-width:820px;margin:0 auto;padding:28px 16px 64px}
+.helpdoc h1{font-size:clamp(26px,4.4vw,36px);line-height:1.3;margin:.2em 0 .4em}
+.helpdoc h2{font-size:clamp(19px,2.8vw,24px);margin:2.1em 0 .6em;scroll-margin-top:16px}
+.helpdoc h3{font-size:17px;margin:1.5em 0 .35em}
+.helpdoc .lede{font-size:17.5px;color:var(--muted);margin:0 0 1.4em}
+.helpdoc .hd-nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:0 0 20px}
+.helpdoc .hd-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.helpdoc .hd-toc a{display:inline-block;padding:5px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;text-decoration:none}
+.helpdoc .tbl{overflow-x:auto;margin:.8em 0}
+.helpdoc table{width:100%;border-collapse:collapse;font-size:15px}
+.helpdoc th,.helpdoc td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.helpdoc th{font-weight:650;white-space:nowrap}
+.helpdoc .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:1em 0}
+.helpdoc .cta{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:2.4em 0 1em}
+.helpdoc .cta a.btn{display:inline-block;margin:6px 0;padding:11px 20px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.helpdoc .hd-q{margin:1.4em 0 .3em;font-weight:650;font-size:16.5px}
+.helpdoc .hd-a{margin:0 0 .2em}
+.helpdoc .hd-note{font-size:13px;color:var(--muted);margin-top:2.6em;border-top:1px solid var(--line);padding-top:14px}
+.helpdoc ul,.helpdoc ol{padding-left:1.25em}
+.helpdoc li{margin:.3em 0}
+@media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de-DE", "mainEntity": [{"@type": "Question", "name": "Wie genau misst das iPhone den Geräuschpegel?", "acceptedAnswer": {"@type": "Answer", "text": "Das Mikrofon eines Smartphones liefert Schätzwerte. dB Halo ist kein zertifizierter professioneller Schallpegelmesser. Für Vergleiche untereinander, etwa vorher und nachher, sind die Werte brauchbar, wenn du immer gleich misst. Mit einem externen Mikrofon und eigenen Kalibrierungsprofilen kannst du deine Messungen zusätzlich vereinheitlichen."}}, {"@type": "Question", "name": "Welche Bewertung soll ich wählen?", "acceptedAnswer": {"@type": "Answer", "text": "Für Alltagsgeräusche in der Regel die A-Bewertung. Wenn du tiefe Töne wie Brummen untersuchst, lohnt sich ein zusätzlicher Blick mit C- oder Z-Bewertung. Notiere die Bewertung, damit spätere Messungen vergleichbar bleiben."}}, {"@type": "Question", "name": "Kann ich Messwerte mit Fotos oder Videos festhalten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. dB Halo exportiert Fotos und Videos mit eingeblendeten dB-Werten. Außerdem kannst du ausgewählte Umgebungsgeräuschpegel an Health übertragen (iPhone und Apple Watch)."}}, {"@type": "Question", "name": "Werden Daten hochgeladen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Die Verarbeitung bleibt auf deinen Geräten. Es gibt kein Konto, keine Werbung, keine Nutzungsanalyse und kein Tracking."}}, {"@type": "Question", "name": "Gibt es dB Halo auch für Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, bei Google Play. Apple Watch, Health und Kurzbefehle gibt es nur auf iPhone und Apple Watch; welche Funktionen die Android-Version bietet, steht in der Beschreibung bei Google Play."}}]}</script>
+<!-- ls-pwa:start -->
+<link rel="manifest" href="/dbhalo-support/manifest.webmanifest">
+<!-- ls-pwa:end -->
+<!-- ls-sharecard:start -->
+<meta property="og:site_name" content="dB Halo: Sound Meter">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://open.cait518.cc/dbhalo-support/assets/og.png?v=3e239c7324">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="dB Halo: Sound Meter — Decibel &amp; Noise Level Monitor">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<!-- ls-sharecard:end -->
+<!-- ls-clickbeacon:start -->
+<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
+<!-- ls-clickbeacon:end -->
+</head>
+<body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">Diese Website wird von Lumi Studio betrieben, dem Entwickler der vorgestellten Apps. Die hier empfohlenen Apps sind unsere eigenen.</p>
+<main class="helpdoc">
+<nav class="hd-nav"><a href="de-DE/">Support-Startseite</a><a href="https://apps.apple.com/app/id6806826699?pt=118326163&amp;ct=sqb1120_dbhalo_de_geraeuschpegel&amp;mt=8">dB Halo: Schallpegelmesser</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1120_dbhalo_de_geraeuschpegel%26utm_campaign%3Dsqb1120_dbhalo_de_geraeuschpegel" rel="noopener" data-ls-play="nav">Google Play</a></nav>
+<h1>Geräuschpegel messen: so wird die Messung aussagekräftig</h1>
+<p class="lede">Ob Großraumbüro, Kinderzimmer, Schlafzimmer an der Hauptstraße oder der neue Lüfter im Keller: Wer den Geräuschpegel kennt, kann besser entscheiden, ob sich Schallschutz, ein anderer Aufstellort oder ein Gespräch lohnt. Mit dB Halo misst du den Pegel direkt am iPhone. Entscheidend ist aber weniger die App als die Art, wie du misst. Diese Seite zeigt, worauf es ankommt.</p>
+<div class="cta" style="margin-top:0">
+<p><a class="btn" href="https://apps.apple.com/app/id6806826699?pt=118326163&amp;ct=sqb1120_dbhalo_de_geraeuschpegel&amp;mt=8">dB Halo im App Store ansehen</a></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1120_dbhalo_de_geraeuschpegel%26utm_campaign%3Dsqb1120_dbhalo_de_geraeuschpegel" rel="noopener" data-ls-play="cta">dB Halo bei Google Play ansehen</a></p>
+</div>
+<ul class="hd-toc"><li><a href="#ablauf">Ablauf in vier Schritten</a></li><li><a href="#werte">Die vier Werte verstehen</a></li><li><a href="#situationen">Typische Situationen</a></li><li><a href="#nachts">Geräusche in der Nacht</a></li><li><a href="#faq">Häufige Fragen</a></li></ul>
+
+<h2 id="ablauf">Ablauf in vier Schritten</h2>
+<ol>
+<li><strong>Frage festlegen.</strong> Willst du wissen, wie laut es <em>dauerhaft</em> ist (z.&nbsp;B. Verkehr vor dem Fenster), oder geht es um <em>einzelne laute Momente</em> (Türenknallen, Bohrhammer, Hundegebell)? Davon hängt ab, auf welchen Wert du später schaust.</li>
+<li><strong>Bewertung wählen und beibehalten.</strong> dB Halo bietet A-, C- und Z-Bewertung. Für Alltagslärm ist die A-Bewertung üblich, weil sie ungefähr dem menschlichen Hörempfinden folgt. Tieffrequentes Brummen wird mit C oder Z deutlicher sichtbar. Wichtig ist vor allem: Vergleiche nur Messungen mit derselben Bewertung.</li>
+<li><strong>Ruhig messen.</strong> Leg das iPhone frei hin oder halte es ruhig, ohne das Mikrofon abzudecken. Sprich während der Messung nicht und vermeide Klappern auf dem Tisch. Lass die Messung lange genug laufen, damit auch schwankender Lärm erfasst wird.</li>
+<li><strong>Speichern und wiederholen.</strong> Jede gespeicherte Messung findest du im Verlauf. Ein einzelner Wert sagt wenig; mehrere Messungen zu verschiedenen Tageszeiten am selben Ort zeigen ein belastbareres Bild.</li>
+</ol>
+
+<h2 id="werte">Die vier Werte verstehen</h2>
+<p>dB Halo zeigt neben dem großen Live-Wert vier Kennzahlen. Jede beantwortet eine andere Frage:</p>
+<div class="tbl"><table>
+<thead><tr><th>Wert</th><th>Was er aussagt</th><th>Hilfreich, wenn …</th></tr></thead>
+<tbody>
+<tr><td>Minimum</td><td>Der leiseste Moment der Messung, also die Grundgeräuschkulisse</td><td>… du wissen möchtest, wie ruhig ein Raum im besten Fall wird</td></tr>
+<tr><td>Mittelwert</td><td>Der typische Pegel über die gesamte Messdauer</td><td>… es um Dauerlärm geht, etwa Straßenverkehr oder ein laufendes Gerät</td></tr>
+<tr><td>Maximum</td><td>Der lauteste Moment im Verlauf der Messung</td><td>… einzelne Ereignisse wie vorbeifahrende Motorräder stören</td></tr>
+<tr><td>Spitze</td><td>Sehr kurze, impulsartige Pegelspitzen</td><td>… es um Knallgeräusche, Hämmern oder Klopfen geht</td></tr>
+</tbody></table></div>
+<p>Liegen Mittelwert und Maximum weit auseinander, wird der Raum vor allem durch einzelne Ereignisse laut. Lautere Momente hält dB Halo zusätzlich mit Zeitstempel im Ereignisprotokoll fest, sodass du später nachvollziehen kannst, <em>wann</em> es laut war.</p>
+
+<h2 id="situationen">Typische Situationen</h2>
+<h3>Arbeitsplatz und Homeoffice</h3>
+<p>Miss während eines normalen Arbeitstags mehrmals, nicht nur in einer ruhigen Minute. Wer länger in einer lauten Umgebung ist, etwa in der Werkstatt, kann mit der Lärmdosis in dB Halo die Tagesbelastung nach NIOSH- oder OSHA-Kriterien schätzen lassen und sieht die verbleibende Dauer. Das ist eine Orientierung und ersetzt keine Beurteilung der Arbeitssicherheit.</p>
+<h3>Haushaltsgeräte und Technik</h3>
+<p>Kühlschrank, Wärmepumpe, PC-Lüfter oder Waschmaschine: Miss immer im gleichen Abstand und an derselben Stelle, einmal mit Gerät und einmal ohne. Der Unterschied zum Grundpegel ist oft aufschlussreicher als der absolute Wert. Bei Brummen oder Pfeifen hilft ein Blick auf das FFT-Spektrum, den Echtzeitanalysator (RTA) mit Oktavbändern oder das Spektrogramm, um zu sehen, in welchem Frequenzbereich das Geräusch liegt. Mehr dazu unter <a href="spektrumanalysator-laermmessgeraet.de-DE.html">Spektrumanalysator und Lärmmessgerät fürs iPhone</a>.</p>
+<h3>Konzert, Club oder Sportveranstaltung</h3>
+<p>Hier zählt neben dem Pegel auch die Dauer. Die Lärmdosis zeigt dir, wie sich die geschätzte Tagesexposition aufbaut. Auf der Apple Watch misst dB Halo eigenständig, das iPhone kann also in der Tasche bleiben.</p>
+<h3>Lärm aus der Nachbarschaft</h3>
+<p>Wenn du Lärm von Nachbarn, Baustellen oder Verkehr festhalten möchtest, exportiere deine Messungen als PDF-Bericht oder CSV-Daten. Wie du dabei sinnvoll vorgehst, beschreiben wir unter <a href="laermprotokoll-app.de-DE.html">Lärmprotokoll mit dem iPhone führen</a> und <a href="neighbor-noise-complaint.de-DE.html">Lärm von Nachbarn dokumentieren</a>.</p>
+
+<h2 id="nachts">Geräusche in der Nacht</h2>
+<p>Ob Straßenlärm, ein Heizungsrohr oder Schnarchen: Nachts misst kaum jemand selbst mit. Das Schlaftagebuch in dB Halo erkennt und klassifiziert Geräuschereignisse direkt auf dem Gerät und protokolliert sie, ohne Mikrofonaudio zu speichern. Eine AAC-Datei entsteht nur, wenn du ausdrücklich eine Aufnahme startest. Am Morgen siehst du, wann es laut wurde.</p>
+
+<div class="box"><strong>Gut zu wissen:</strong> Die Schallpegelmessung ist in dB Halo immer kostenlos und unbegrenzt, auch mit externem Mikrofon. Auf iPhone und Apple Watch gilt das ebenso für Widgets und die Messung mit der Uhr. Für Exporte, Kalibrierungsprofile, Spektrum, Lärmdosis und Schlaftagebuch gibt es eine begrenzte Zahl kostenloser Nutzungen; danach schaltet Lifetime Pro, ein einmaliger In-App-Kauf ohne Abonnement, sie dauerhaft frei.</div>
+
+<h2 id="faq">Häufige Fragen</h2>
+<p class="hd-q">Wie genau misst das iPhone den Geräuschpegel?</p>
+<p class="hd-a">Das Mikrofon eines Smartphones liefert Schätzwerte. dB Halo ist kein zertifizierter professioneller Schallpegelmesser. Für Vergleiche untereinander, etwa vorher und nachher, sind die Werte brauchbar, wenn du immer gleich misst. Mit einem externen Mikrofon und eigenen Kalibrierungsprofilen kannst du deine Messungen zusätzlich vereinheitlichen.</p>
+<p class="hd-q">Welche Bewertung soll ich wählen?</p>
+<p class="hd-a">Für Alltagsgeräusche in der Regel die A-Bewertung. Wenn du tiefe Töne wie Brummen untersuchst, lohnt sich ein zusätzlicher Blick mit C- oder Z-Bewertung. Notiere die Bewertung, damit spätere Messungen vergleichbar bleiben.</p>
+<p class="hd-q">Kann ich Messwerte mit Fotos oder Videos festhalten?</p>
+<p class="hd-a">Ja. dB Halo exportiert Fotos und Videos mit eingeblendeten dB-Werten. Außerdem kannst du ausgewählte Umgebungsgeräuschpegel an Health übertragen (iPhone und Apple Watch).</p>
+<p class="hd-q">Werden Daten hochgeladen?</p>
+<p class="hd-a">Nein. Die Verarbeitung bleibt auf deinen Geräten. Es gibt kein Konto, keine Werbung, keine Nutzungsanalyse und kein Tracking.</p>
+<p class="hd-q">Gibt es dB Halo auch für Android?</p>
+<p class="hd-a">Ja, bei Google Play. Apple Watch, Health und Kurzbefehle gibt es nur auf iPhone und Apple Watch; welche Funktionen die Android-Version bietet, steht in der Beschreibung bei Google Play.</p>
+
+<div class="box"><strong>Hinweis:</strong> Die Messwerte sind Schätzungen. dB Halo ist kein zertifizierter professioneller Schallpegelmesser und ersetzt weder medizinische Beratung noch eine Beurteilung der Arbeitssicherheit.</div>
+
+<div class="cta">
+<p><a class="btn" href="https://apps.apple.com/app/id6806826699?pt=118326163&amp;ct=sqb1120_dbhalo_de_geraeuschpegel&amp;mt=8">dB Halo: Schallpegelmesser im App Store ansehen</a></p>
+<p><strong>Du nutzt Android?</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dsqb1120_dbhalo_de_geraeuschpegel%26utm_campaign%3Dsqb1120_dbhalo_de_geraeuschpegel" rel="noopener" data-ls-play="cta">dB Halo bei Google Play ansehen</a></p>
+</div>
+
+<h2 id="related">Weitere Anleitungen</h2>
+<ul><li><a href="laermmessgeraet-app.de-DE.html">Lärmmessgerät-App fürs iPhone</a></li><li><a href="decibel-chart.de-DE.html">Dezibel-Tabelle: wie laut sind Alltagsgeräusche?</a></li><li><a href="laermprotokoll-app.de-DE.html">Lärmprotokoll mit dem iPhone führen</a></li><li><a href="spektrumanalysator-laermmessgeraet.de-DE.html">Spektrumanalysator und Lärmmessgerät fürs iPhone</a></li><li><a href="neighbor-noise-complaint.de-DE.html">Lärm von Nachbarn dokumentieren</a></li></ul>
+<p class="hd-note">Diese Seite wurde vom Entwickler von dB Halo mit Unterstützung durch KI erstellt und mit der Beschreibung im App Store abgeglichen. Zuletzt aktualisiert: 2026-11-20.</p>
+<p style="margin:18px auto 0;max-width:1060px;text-align:center;font-size:12px;opacity:.72"><a href="https://apps.apple.com/app/id6806826699?action=write-review" rel="noopener" data-app-store-review="owner" style="color:inherit;text-decoration:underline">Du nutzt diese App schon? Bewerte sie oder schreib eine Rezension im App Store</a></p>
+</main>
+</body>
+</html>
